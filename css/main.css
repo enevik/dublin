@@ -1,0 +1,709 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+    margin: 0;
+}
+body {
+    background: linear-gradient(black 7%, white 30%);
+    font-family: Colaborate;
+    line-height: 10px;  
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+p{
+    padding: 4px;
+}
+/*================header=====================*/
+header{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding-left: 8px;
+}
+header div:first-child{
+    display: flex;
+}
+header div:first-child h1{
+    position: absolute;
+    align-items: left;
+}
+.logoname{
+    display: flex;
+    color: white;
+}
+.logotext{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 9px;
+    padding-top: 4px;
+
+}
+.logotitle{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/*==================main=====================*/
+.slideshowflex{
+    display: flex;
+}
+.leftrightimg{
+    height: 39px;
+    width: auto;
+    margin-top: 150px;
+}
+.slideshow{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 9%;
+    margin-top:  5%;
+}
+.sh_txt{
+    margin-right: 3%;
+}
+.slideshow p{
+    color: white;
+    text-align: right;
+}
+.dublinstitle{
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 80px;
+}
+.dublinsapps{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+}
+.freeandpaidipads{
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px;
+}
+.readmore{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 20%;
+    font-weight: bold;
+    margin-top: 5px;
+    color: white;
+}
+/*=====================boxes====================*/
+.boxes{
+    display: inline-flex;
+    flex-direction: row;
+    color:grey;
+}
+.boxes img{
+    position: relative;
+}
+.text{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 9%;
+}
+.text1{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding-left: 22%;
+    padding-top: 9%;
+}
+.text2{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding-top: 9%;
+    padding-left: 39%;
+}
+.text3{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding-top: 9%;
+    padding-left: 55%;
+}
+/*====================categories=================*/
+.categories{
+    margin-top: 3%;
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+.categories div{
+    padding-right: 2%;
+}
+.categories div img{
+    float: left;
+    padding: 1%;
+}
+.categories p, .categories sub, .categories h2{
+    padding-top: 3.2%;
+}
+/*=======================tagslider=================*/
+.tagslider{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 18%;
+    padding-right: 18%;
+    margin-bottom: 3%;
+}
+.tagslider span{
+    color: lightblue;
+}
+/* ==================passages=======================*/
+.ipad2{
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+.passagestitle{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.passagesflex{
+    display: flex;
+    flex-direction: row;
+}
+.passagesflextext{
+    margin-top: 5%;
+}
+.passagesflextext img{
+    margin-right: 1%;
+}
+.passagesflextext p{
+    padding-top: 2%;
+}
+.passagesbutton{
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 8%;
+}
+.passagesbutton p{
+    margin-right: 30px;
+    display: flex;
+    color: white;
+    padding: 8px;
+    background-color: blue;
+    border-radius: 15%;
+}
+/*====================lastmain====================*/
+.lastmain{
+    margin-bottom: 5%;
+}
+.lastmain div{
+    padding: 3px;
+    border-top: solid lightgrey 1px;
+    border-bottom: solid lightgrey 1px;
+}
+.lastmain div img{
+    float: left;
+    margin-right: 8px;
+    margin-top: 9px;
+}
+.lastmain div p{
+    padding: 10px;
+}
+/*========================footer========================*/
+footer{
+    background-color:   #282828;
+    color: white;
+}
+.twitterfooter{
+    display: flex;
+    border-bottom:  solid 1px grey;
+}
+.twitterfooter img{
+    margin: 8px;
+}
+.twitterfooter p{
+    margin-top: 20px;
+}
+.twitterfooter p:last-child{
+    text-align: right;
+}
+.footerflex{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footerflex div{
+    flex-basis: 50%;
+}
+h3{
+    font-size: 30px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+} 
+.footeremail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.emailaddress{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    padding-left: 3px;
+    background-color: black;
+    border-radius: 5%;
+    margin-right: 10px;
+    color: dimgrey;
+}
+.footeremail div p{
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border-radius: 6%;
+    text-align: center;
+}
+.contactgrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px
+}
+.contactgrid div{
+    color: black;
+    background-color: black;
+    padding-right: 50px;
+    padding-top:  7px;
+    padding-bottom: 7px;
+    padding-right: 50px;
+    border-radius: 5%
+}
+.contactgrid div:last-child{
+    grid-row: 1/4;
+    grid-column: 2/3
+}
+.footerendflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+.submit{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iphoneapplicationsflex{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.iphoneapplicationsflex p:first-child{
+    font-size: 20px;
+}
+.iphoneapplicationsflex p{
+    font-size: 12px;
+}
+.iphoneapplicationsflex div:last-child{
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    padding-right: 20px;
+    border-radius: 30%;
+}
+.iphoneapplicationsflex div:last-child p{
+    font-size: 15px;
+    margin-top: 4px;
+}
+.iphoneapplicationsflex div:last-child img{
+    height: 15px;
+    margin-top: 4px;
+}
+.arrowpic{
+    margin-top: 80px;
+}
+.dublinsiphoneapplications{
+    background-color: white;
+    padding: 40px;
+}
+.ipadslider{
+    display: flex;
+    justify-content: space-between;
+}
+.ipadslider img{
+    height: 39px;
+    width: 39px;
+}
+.ipadimageviewerflex{
+    display: flex;
+}
+.ipadimageviewerflex div{
+    margin: 30px;
+}
+.ipadimageviewerflex img{
+    width: 200px;
+    height: auto;
+}
+.greybackground{
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.gridtitle{
+    list-style-type:none;
+    padding-top: 1em;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    font-family: Colaborate;
+    padding-left: 0px;
+}
+.gridtitle li{
+    float: left;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-right: 1em;
+    border-radius: 5px 5px 0 0;
+    font-family: Colaborate;
+}
+.gridapps{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gridapps div{
+    text-align: center;
+    margin: 20px;
+}
+.gridappstext{
+    font-size: 20px;
+}
+.gridapps div p{
+    text-align: left;
+}
+.gridapps img{
+    width: 33%;
+    height: auto;
+    float:left;
+}
+.read{
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 10%;
+    float: left;
+    margin-left:3px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
